@@ -1,0 +1,40 @@
+.client-slider {
+    .slick-list {
+        margin: 0 10% !important;
+    }
+
+    // .slick-arrow::before {
+    //     // display: none !important;
+    // }
+
+    .slick-arrow {
+        position: absolute !important;
+        height: fit-content !important;
+        width: fit-content !important;
+    }
+
+    .slick-prev {
+        left: 30px !important;
+    }
+
+    .slick-next {
+        right: 30px !important;
+    }
+
+    a:focus-visible {
+        display: none;
+    }
+
+    img {
+        outline: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .client-slider {
+        .slick-list {
+            margin: 0 !important;
+        }
+    }
+
+}

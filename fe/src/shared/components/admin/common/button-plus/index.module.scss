@@ -1,0 +1,49 @@
+@import "Common.scss";
+
+.button {
+    border: 1px solid $titleColor;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    background-color: $white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        path {
+            fill: $titleColor;
+        }
+    }
+}
+
+.button-orange {
+    border: 1px solid $mainColor !important;
+
+    svg {
+        path {
+            fill: $mainColor;
+        }
+    }
+}
+
+.button:hover {
+    background-color: $titleColor !important;
+
+    svg {
+        path {
+            fill: $white;
+        }
+    }
+}
+
+.button-orange:hover {
+    background-color: $mainColor !important;
+
+    svg {
+        path {
+            fill: $white;
+        }
+    }
+}

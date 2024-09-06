@@ -1,0 +1,33 @@
+.SideBar {
+    display: flex;
+    justify-content: center;
+    padding: 24px 25px;
+    // height: 500px;
+    // overflow-y: scroll;
+}
+.Title-menu {
+    color: #5c5e64;
+    font-size: 10px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.Frame-MenuItem {
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.MenuItem a:hover span {
+    color: #FF8B13;
+}
+.MenuItem a {
+    background-color: #fff !important;
+}
+.MenuItem a:hover {
+    background-color: initial !important;
+}
+.menu-active ul li a span:nth-child(2) {
+   overflow: visible !important;
+}
+.submenu-active a{
+     background-color: #f3f3f3 ;
+     color: #FF8B13;
+}

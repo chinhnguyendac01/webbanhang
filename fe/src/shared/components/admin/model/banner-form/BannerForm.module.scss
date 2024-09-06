@@ -1,0 +1,39 @@
+@import "Common.scss";
+
+.btn-edit {
+    border: 1px solid #0E0F3B !important;
+
+    svg {
+        path {
+            fill: #0E0F3B;
+        }
+    }
+}
+
+.btn-edit:hover {
+    background-color: #0E0F3B;
+
+    svg {
+        path {
+            fill: $white;
+        }
+    }
+}
+
+.Frame-input-content {
+    padding: 0 80px;
+}
+
+.Frame-btn-submit {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+
+}
+
+.section-title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}

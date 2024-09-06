@@ -1,0 +1,80 @@
+@import 'Common.scss';
+
+.enter-otp{
+    margin: 0px 56px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: $fontBold;
+    line-height: normal;
+    color: $titleColor;
+}
+
+.desc{
+    text-align: center;
+    font-size: 14px;
+    font-weight: $fontNormal;
+    line-height: normal;
+}
+
+.otp-input{
+    margin: 24px 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 65px;
+    gap: 5%;
+}
+
+.item{
+    width: 16%;
+}
+
+.item input {
+    width: 100%;
+    height: 100%;   
+    border-radius: 8px;
+    border: 1px solid var(--0E0F3B, #0E0F3B);   
+    text-align: center;
+    font-size: 32px;
+}
+
+.valid input {
+    border: 1px solid var(--07407B, #FF8B13);   
+}
+
+input:focus {
+    outline: none;
+}
+
+.send-mail{
+    color: $mainOrangeColor;
+    cursor: pointer;
+    font-weight: $fontWeight;
+}
+
+.action{
+    text-align: center;
+}
+
+.btn-action{
+    margin-top: 32px;
+    min-width: 120px;
+    padding: 10px;
+    background-color: transparent;
+    border: 0.1px solid $titleColor;
+    text-align: center;
+    color: $titleColor;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: $fontWeight;
+    line-height: normal;
+}
+
+.btn-action:hover{
+    background-color: $titleColor;
+    color: $white;
+}

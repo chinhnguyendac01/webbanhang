@@ -1,0 +1,54 @@
+@import 'Common.scss';
+
+.wrapper{
+    overflow: hidden;
+    border-radius: 8px;
+
+    table{
+        width: 100%;
+        border-radius: 15px !important;
+
+        th{
+            white-space: nowrap;
+        }
+    }
+
+    .odd-row{
+        background: var(--neutral-100, #F8F9FC);
+    }
+
+    .title-column, .content-column{
+        padding: 8px 15px;
+    }
+
+    .title-column{
+        font-size: 16px;
+        color: $textColor;
+        font-weight: $fontWeight;
+        line-height: normal;
+        border-right: 2px solid var(--FFFFFF, #FFF);
+    }
+
+    .content-column{
+        color: $textColor;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: $fontNormal;
+    }
+
+    .overview{
+        padding: 8px 15px;
+        color: $activeColor;
+        font-size: 16px;
+        font-weight: $fontWeight;
+        line-height: normal;
+    }
+
+    @media only screen and (max-width: 600px){
+        .title-column {
+            width: 50%;
+        }
+        
+    }
+}
+

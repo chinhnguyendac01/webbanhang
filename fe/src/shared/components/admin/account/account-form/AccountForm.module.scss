@@ -1,0 +1,89 @@
+@import "Common.scss";
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-container {
+    margin-top: 24px;
+
+    input {
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid var(--09224B, rgba(9, 34, 75, 0.22));
+        background: #FFF;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 10px 15px;
+    }
+
+}
+
+
+.btn-submit {
+    display: flex;
+    width: fit-content;
+    min-width: 120px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid;
+    border-radius: 25px;
+    background: $mainColor;
+    color: $white;
+}
+
+// //custom dropdown
+// .account-roles {
+//     >div {
+//         div:first-child {
+//             >label {
+//                 border-radius: 5px !important;
+//                 border: 1px solid var(--09224B, rgba(9, 34, 75, 0.22)) !important;
+//                 background: #FFF !important;
+//                 box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25) !important;
+//             }
+//         }
+
+//         div:nth-child(2) {
+//             label:first-child {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+
+//custom dropdown
+.account-roles {
+    >div {
+        div:first-child {
+            >label {
+                border-radius: 5px !important;
+                border: 1px solid var(--09224B, rgba(9, 34, 75, 0.22)) !important;
+                background: #FFF !important;
+                // box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25) !important;
+            }
+        }
+
+        div:nth-child(2) {
+            label:first-child {
+                display: none;
+            }
+
+            label {
+                border: 1px solid rgba(0, 0, 0, 0.25);
+                border-bottom: unset;
+                border-top: unset;
+            }
+
+            label:last-child {
+                border-radius: 4px;
+                box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25) !important;
+            }
+        }
+    }
+}

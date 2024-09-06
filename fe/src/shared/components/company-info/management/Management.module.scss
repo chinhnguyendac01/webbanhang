@@ -1,0 +1,50 @@
+@import "Common.scss";
+
+.Management{
+    margin-top: 72px;
+}
+
+.topic{
+    color: $titleColor;
+    font-size: 28px;
+    font-weight: $fontBold;
+    line-height: normal;
+}
+
+.intro{
+    padding-top: 16px;
+    color: $textColor;
+    font-size: 16px;
+    font-weight: $fontNormal;
+    line-height: normal;
+    white-space: pre-line;
+}
+
+.title{
+    margin-top: 24px;
+    color: $activeColor;
+    font-size: 18px;
+    font-weight: $fontBold;
+    line-height: normal;
+}
+
+.content{
+    margin-top: 8px;
+    color: $textColor;
+    font-size: 16px;
+    font-weight: $fontNormal;
+    line-height: normal;
+    white-space: pre-line;
+}
+
+@media only screen and (max-width: 991px){
+    .Management{
+        margin-top: 54px;
+    }
+
+    .topic{
+        font-size: 18px;
+        font-weight: $fontWeight;
+        text-align: center;
+    }
+}

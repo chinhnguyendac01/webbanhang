@@ -1,0 +1,75 @@
+@import 'Common.scss';
+
+.SuggestionBanner {
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    padding-bottom: 32px;
+    font-size: 28px;
+    font-weight: $fontBold;
+    line-height: normal;
+    color: $titleColor;
+}
+
+.text {
+    width: 44%;
+    font-size: 16px;
+    font-weight: $fontNormal;
+    line-height: normal;
+    color: $textColor;
+}
+
+.mobile-banner {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .SuggestionBanner {
+        height: 100%;
+        padding: 45px 0px;
+    }
+
+    .title {
+        padding-bottom: 16px;
+        font-size: 18px;
+        font-weight: $fontWeight;
+    }
+
+    .text {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .SuggestionBanner {
+        display: none;
+    }
+
+    .mobile-banner {
+        display: block;
+
+        .mobile-image {
+            width: 100%;
+        }
+
+        .mobile-image img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .mobile-title {
+            margin: 24px 0px;
+            text-align: center;
+            color: $titleColor;
+            font-size: 18px;
+            font-weight: $fontWeight;
+            line-height: normal;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.Dialog-content {
+    background-color: #fff;
+    width: 330px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+}
+.Icon_Dialog {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ff8b13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Icon_Dialog svg {
+    margin-right: 8px;
+    margin-top: 5px;
+}
+.Title_Dialog-success {
+    color: var(--FF8B13, #ff8b13);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

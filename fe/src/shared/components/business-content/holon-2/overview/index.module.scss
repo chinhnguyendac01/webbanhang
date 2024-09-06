@@ -1,0 +1,166 @@
+@import "Common.scss";
+
+.section-introduce{
+    margin-top: 72px;
+}
+
+.background_middle {
+    height: 300px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.flex-between {
+    margin-top: 24px;
+    display: flex;
+    gap: 10;
+
+    .section-text {
+        width: 49%;
+        margin-right: 3%;
+        height: 100%;
+    }
+
+    .section-images {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .image-wrapper {
+            margin-top: 10px;
+        }
+    }
+}
+
+// .section-introduce {
+//     padding: 40px 80px;
+// }
+
+.section-title {
+    color: var(--07407B, #07407B);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+//link
+.btn-link {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    font-size: $fontSizeNormal;
+    font-weight: $fontNormal;
+    cursor: pointer;
+
+    .chervon-icon {
+        margin-right: 6px;
+
+        svg {
+            path {
+                fill: $activeColor;
+            }
+        }
+    }
+
+    .text {
+        color: $activeColor;
+    }
+}
+
+.btn-link:first-child {
+    margin-top: 0;
+}
+
+.btn-link:hover {
+
+    .chervon-icon {
+        svg {
+            path {
+                fill: $titleColor;
+            }
+        }
+    }
+
+    .text {
+        color: $titleColor;
+    }
+}
+
+
+
+@media only screen and (max-width: 991.98px) {
+    // .section {
+    //     margin-top: 0 !important;
+    //     margin-bottom: 62px !important;
+    // }
+
+    .section-title {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: auto;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .section-introduce{
+        margin-top: 32px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .flex-between {
+        flex-direction: column-reverse;
+
+        .section-text {
+            width: 100%;
+            margin-top: 16px;
+        }
+
+        .section-images {
+            width: 100%;
+        }
+    }
+
+    .section-introduce {
+        padding: 16px 0;
+    }
+
+    .advantage-mb-img {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .background_middle {
+        height: 200px;
+    }
+
+    .title,
+    .section-title {
+        font-size: 18px;
+        line-height: auto;
+        // padding: 0 10px;
+        // white-space: nowrap;
+        word-break: keep-all;
+    }
+
+    .text,
+    .section-text {
+        font-size: $fontSizeSmall !important;
+    }
+}

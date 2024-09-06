@@ -1,0 +1,104 @@
+@import "Common.scss";
+
+.section-container {
+    width: 100%;
+
+    .title-container {
+        // margin-bottom: 32px;
+        // text-align: center;
+
+        .section-title {
+            color: $titleColor;
+            font-size: $fontSizeLarge;
+            font-style: normal;
+            font-weight: $fontBold;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+
+        .sub-title {
+            color: $textColor;
+            font-size: $fontSizeMedium;
+            font-style: normal;
+            font-weight: $fontSemiBold;
+            line-height: normal;
+        }
+    }
+
+    // .cards-slider {
+    //     display: none;
+
+    //     .slider-item {
+    //         padding: 0 10px;
+    //         height: 100%;
+    //     }
+    // }
+
+    .section-content {
+        .content-text {
+            color: $textColor;
+            font-size: $fontSizeNormal;
+            font-style: normal;
+            font-weight: $fontNormal;
+            line-height: normal;
+            margin-bottom: 32px;
+        }
+
+        .cards-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            // gap: 20px;
+
+            .item {
+                width: 32%;
+                // min-width: 270px;
+                min-height: 100%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .section-container {
+        .cards-list {
+            display: none !important;
+        }
+
+        .cards-slider {
+            display: block;
+        }
+
+        .title-container {
+            margin-bottom: 24px !important;
+            text-align: center;
+
+            .section-title {
+                font-size: $fontSizeMedium !important;
+                font-weight: $fontSemiBold !important;
+                margin-bottom: 8px !important;
+            }
+        }
+
+        .section-content {
+            display: flex;
+            flex-direction: column !important;
+
+            >div {
+                width: 100% !important;
+
+            }
+
+            .content-text {
+                color: $textColor;
+                font-size: $fontSizeNormal;
+                font-style: normal;
+                font-weight: $fontNormal;
+                line-height: normal;
+                margin-bottom: 24px !important;
+            }
+        }
+    }
+}

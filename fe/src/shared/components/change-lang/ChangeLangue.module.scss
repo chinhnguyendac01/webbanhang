@@ -1,0 +1,105 @@
+.Frame_header_right {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.Header_buttonLanguage {
+    display: block !important;
+}
+.Button_choose {
+    position: relative;
+}
+
+.Btn_language {
+     display: flex;
+     align-items: center;
+     box-sizing: border-box;
+     width: 82px;
+     height: 42px;
+     background: #fff;
+     padding: 0 8px;
+     border: none;
+     transition: background 0.3s;
+     justify-content: space-between;
+     border-radius: 3px;
+     border: 1px solid #f1f3f9;
+ }
+ 
+.Btn_language:hover {
+    background: var(--2eb9e6, #ff8b13);
+}
+
+.Btn_language:hover .Text_language {
+    color: #fff;
+}
+
+.Btn_language_choose {
+    // z-index: 1100;
+    // position: absolute;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 82px;
+    height: 42px;
+    background: #fff;
+    padding: 0 8px;
+    border: none;
+    transition: background 0.2s;
+    justify-content: space-between;
+}
+
+.Btn_language_choose:hover {
+    background: var(--2eb9e6, #ff8b13);
+}
+
+.Btn_language_choose:hover .Text_language {
+    color: #fff;
+}
+.Text_language {
+    padding-right: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--0E0E28, var(--0E0E28, #0e0e28));
+}
+.menu-languages {
+    z-index: 1100;
+    position: absolute;
+}
+.Header_overlay {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+
+    cursor: pointer;
+}
+
+
+//Btn-lang
+.Btn-lang {
+    width: 26px;
+    height: 18px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border: none;
+    border-radius: 3px;
+}
+.Btn-lang {
+    position: relative;
+}
+
+.selected::before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #ff8b13;
+   
+}

@@ -1,0 +1,68 @@
+@import "Common.scss";
+
+.MuiPagination-ul {
+    gap: 16px;
+    line-height: 15px !important;
+    flex-wrap: nowrap !important;
+}
+.MuiButtonBase-root {
+    font-family: $font-family !important;
+    
+}   
+.MuiButtonBase-root.Mui-selected {
+    background: var(--FF8B13, #FF8B13); 
+    color: var(--FFFFFF, #fff) ;
+    font-weight: 400;
+    align-items: center !important;
+}
+.MuiButtonBase-root {
+    font-size: 18px !important; 
+}
+.MuiButtonBase-root:hover {
+    background: var(--FF8B13, #FF8B13) ; 
+    color: var(--FFFFFF, #fff) ;
+}
+.MuiPagination-root {
+    margin: 0 auto !important;
+    align-items: center !important;
+}
+.MuiPagination-root ul li:first-child button,
+.MuiPagination-root ul li:last-child button {
+    min-width: 24px !important;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+   
+}
+
+
+.MuiPagination-root ul li:first-child,
+.MuiPagination-root ul li:last-child {
+    min-width: 24px !important;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+}
+
+.MuiPagination-root ul li button {
+    min-width: 25px !important;
+    width: 25px !important;
+    height: 25px !important;
+   
+}
+
+.MuiPagination-root ul li {
+    min-width: 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+@media (max-width: 768px) {
+    .MuiStack-root {
+        display: none !important;
+    }
+}
+// .MuiSvgIcon-root:hover {
+//     background: #5FC7FF;
+//     border-radius: 50%;
+//     fill: white;
+// }

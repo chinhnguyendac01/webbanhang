@@ -1,0 +1,15 @@
+.btn-submit {
+    border: none;
+    display: flex;
+    min-width: 119px;
+    width: fit-content;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: var(--FF8B13, #FF8B13);
+    color: white;
+}

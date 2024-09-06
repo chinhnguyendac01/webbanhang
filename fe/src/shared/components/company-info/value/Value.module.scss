@@ -1,0 +1,104 @@
+@import "Common.scss";
+
+.value{
+    margin-top: 72px;
+}
+
+.topic{
+    color: $titleColor;
+    font-size: 28px;
+    font-weight: $fontBold;
+    line-height: normal;
+}
+
+.value-image{
+    display: none;
+}
+
+.content-wrapper{
+    margin-top: 19px;
+    padding: 42px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--FBF5ED, #FBF5ED);
+}
+
+.title{
+    color: $activeColor;
+    font-size: 40px;
+    font-weight: $fontBold;
+    line-height: normal;
+    white-space: nowrap;
+    padding-bottom: 32px;
+    min-width: 236px;
+}
+
+.content{
+    color: $textColor;
+    font-size: 16px;
+    font-weight: $fontWeight;
+    line-height: normal;
+}
+
+.item{
+    padding-bottom: 48px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 991px){
+    .value{
+        margin-top: 30px;
+    }
+
+    .topic{
+        font-size: 18px;
+        font-weight: $fontWeight;
+        text-align: center;
+    }
+
+    .value-image{
+        display: block;
+        margin-top: 16px;
+    }
+
+    .value-image img{
+        width: 100%;
+        height: 90%;
+    }
+
+    .content-wrapper{
+        margin-top: 24px;
+        padding: 21px 24px 5px 24px;
+    }
+
+    .text{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title{
+        font-size: 20px;
+        min-width: 0;
+    }
+
+    .item{
+        padding-bottom: 16px;
+    }
+
+    .image{
+        display: none;
+    }
+}

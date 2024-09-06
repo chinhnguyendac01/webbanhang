@@ -1,0 +1,45 @@
+@import "Common.scss";
+.MuiTablePagination-selectLabel,.MuiTablePagination-displayedRows,.MuiSelect-select {
+    font-family: $font-family !important;
+    margin-bottom: 0px;
+    color: var(--0E0F3B, #0e0f3b);
+    font-size: 14px;
+    font-weight: 600 !important;
+}
+.MuiTablePagination-actions {
+    display: none;
+}
+.MuiInputBase-root {
+    margin: 0 !important;
+}
+.MuiList-root li {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.MuiTablePagination-displayedRows {
+    margin-bottom: 0px;
+}
+.MuiSelect-select {
+    padding: 0px !important;
+    text-align-last: center !important;
+    width: 30px !important;
+    min-width: 30px !important;
+}
+.MuiToolbar-root {
+    border-radius: 4px;
+    // border: 1px solid var(--0E0F3B, #0e0f3b);
+    background: #fff;
+    width: auto;
+    box-sizing: border-box;
+    width: 180px;
+    padding: 0 10px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+}
+.MuiTablePagination-menuItem{
+    background-color: #fff !important;
+}
+
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar{
+    font-weight: 600 !important;
+}

@@ -1,0 +1,51 @@
+@import "Common.scss";
+
+.block-wrap {
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+}
+
+.block {
+    width: fit-content;
+    height: fit-content;
+    // width: 100%;
+    min-height: 108px;
+    clip-path: polygon(25px 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0 20.52px);
+    background-color: #2EB9E6;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--FFFFFF, #FFF);
+    text-align: justify;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: auto;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1), -5px 0 15px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.block-orange {
+    background-color: $mainColor;
+}
+
+.block-click {
+    cursor: pointer;
+}
+
+.block-click:hover {
+    background-color: #ECF7FF !important;
+    color: $titleColor;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .block {
+        width: fit-content;
+        height: fit-content;
+        // height: 147px;
+        font-size: 12px !important;
+        padding: 13px !important;
+    }
+
+}

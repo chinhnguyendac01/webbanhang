@@ -1,0 +1,110 @@
+.Job_data {
+    width: 100%;
+    height: auto;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Frame_title-job {
+    width: auto;
+    height: auto;
+    max-height: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.Title_job {
+    color: var(--414042, #0E0F3B);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    transition: color 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.Time_job {
+    border-radius: 8px;
+    background: var(--f5983a, #ff8b13);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    line-height: 18px;
+}
+.Data_job {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Data_job-start {
+    width: auto;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Frame_post-time-news,
+.Frame-location_news {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 24px;
+}
+.Time_post,
+.Address {
+    color: var(--0E0F3B, #0E0F3B);
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 16px;
+}
+.Data_job-end {
+    width: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: end;
+    align-items: center;
+}
+.Frame_salary-job {
+    margin-right: 32px;
+}
+.Money_job {
+    color: var(--f5983a, #ff8b13);
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 600;
+}
+.Icon_detail-job {
+    cursor: pointer;
+}
+.Title_job:hover {
+    color: #ff8b13;
+}
+.Icon_detail-job:hover svg path {
+    fill: #ff8b13 !important;
+}
+svg path {
+    transition: fill 0.3s;
+}
+@media (max-width: 768px) {
+    .Title_job {
+        font-size: 16px;
+    }
+    .Time_job {
+        font-size: 14px;
+    }
+    .Data_job-end {
+        width: 100%;
+        align-self: start;
+    }
+    .Data_job {
+        flex-direction: column;
+        height: auto;
+        gap: 24px;
+    }
+}

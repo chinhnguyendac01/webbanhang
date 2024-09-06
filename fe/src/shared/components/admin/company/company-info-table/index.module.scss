@@ -1,0 +1,145 @@
+@import "Common.scss";
+
+.InformationTable {
+    input {
+        border: none;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    tr {
+        width: 100%;
+    }
+}
+
+.InformationTable table {
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.topic {
+    color: $titleColor;
+    font-size: 28px;
+    font-weight: $fontBold;
+    line-height: normal;
+}
+
+.custom-table {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.odd-row {
+    background: var(--neutral-100, #F8F9FC);
+}
+
+.title-column {
+    width: 30%;
+    font-size: 16px;
+    color: $textColor !important;
+    font-weight: $fontWeight;
+    line-height: normal;
+    border-right: 2px solid var(--FFFFFF, #FFF);
+    display: flex;
+    min-width: 30%;
+
+    input {
+        font-weight: $fontBold;
+    }
+
+    input:read-only {
+        cursor: not-allowed;
+    }
+}
+
+.title-column,
+.content-column {
+    padding: 15px;
+}
+
+.content-column {
+    color: $textColor;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: $fontNormal;
+    height: fit-content;
+    width: 70%;
+
+
+    textarea {
+        width: 100%;
+        height: fit-content;
+        border: none;
+        background-color: inherit;
+        overflow: auto;
+        outline: none !important;
+        display: flex;
+        align-items: center;
+        color: $textColor !important;
+    }
+
+
+    textarea:read-only {
+        cursor: not-allowed;
+    }
+}
+
+.btn-add-more {
+    background-color: $titleColor;
+}
+
+.btn-edit {
+    border: 1px solid #0E0F3B !important;
+
+    svg {
+        path {
+            fill: #0E0F3B;
+        }
+    }
+}
+
+.btn-edit:hover {
+    background-color: #0E0F3B;
+
+    svg {
+        path {
+            fill: $white;
+        }
+    }
+}
+
+.Frame-input-content {
+    padding: 0 80px;
+}
+
+.Frame-btn-submit {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+
+}
+
+.section-title {
+    color: #0E0F3B;
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .topic {
+        text-align: center;
+        font-size: 18px;
+        font-weight: $fontWeight;
+    }
+
+    .title-column {
+        width: 50%;
+    }
+}

@@ -1,0 +1,321 @@
+{
+    "header": {
+        "home": "Trang chủ",
+        "companyInfo": "Thông tin công ty",
+        "business": "Nội dung kinh doanh",
+        "recruiment": "Thông tin tuyển dụng",
+        "contact": "Liên hệ",
+        "logout": "Đăng xuất",
+        "ai_solution": "Giải pháp AI"
+    },
+    "home": {
+        "learnMore": "Bấm vào đây để xem video giới thiệu",
+        "contract": "Phát triển hợp đồng",
+        "staff": "Nhân sự",
+        "recruitment": "Tuyển dụng",
+        "clickDetail": "Chi tiết",
+        "tech_stack": "Nền tảng công nghệ",
+        "client_slider": "Đối tác",
+        "clickDetail_2": "Mô tả công việc",
+        "SES": "System Engineer Service (SES)",
+        "banner": {
+            "title": "Sử dụng công nghệ AI trong kinh doanh!",
+            "sub_title": "Độ chính xác và tính linh hoạt của sản phẩm AI chưa đạt đến mức ứng dụng trong kinh doanh",
+            "card_left": "Tóm tắt khối lượng lớn văn bản và tài liệu bằng AI",
+            "card_left_2": "(AI xử lý ngôn ngữ tự nhiên)",
+            "card_center": "Công ty TOPLOOP sẽ hỗ trợ bạn",
+            "card_right": "Tính năng ghép nối dữ liệu văn bản khác nhau bằng AI",
+            "clickReason": "Đây là lý do"
+        },
+        "onboarding": "Tính năng và hiệu quả",
+        "implementation": "Giới thiệu trường hợp"
+    },
+    "business": {
+        "clickContractPage": "Xem mô hình phát triển hợp đồng",
+        "clickLagPage": "Xem mô hình phát triển phòng thí nghiệm",
+        "clickHolonPage": "Xem HOLON CONCEPT",
+        "clickHolonContract": "※ Giới thiệu bản demo/yêu cầu tài liệu."
+    },
+    "breadcrumb": {
+        "career": "Thông tin tuyển dụng",
+        "business": "Chi tiết doanh nghiệp",
+        "lab": "Phát triển loại phòng thí nghiệm",
+        "contract": "Phát triển hợp đồng",
+        "product": "Trang chủ",
+        "holon": "Ưu điểm của việc triển khai HOLON"
+    },
+    "infoCompany": {
+        "name": "Tên công ty",
+        "institution": "Thành lập",
+        "capital": "Vốn đầu tư",
+        "representative": "Giám đốc",
+        "location": "Vị trí",
+        "details": "Nội dung kinh doanh",
+        "numbers": "Thành viên",
+        "bank": "Ngân hàng",
+        "partner": "Đối tác"
+    },
+    "contact": {
+        "name": "Họ và Tên",
+        "companyName": "Tên công ty",
+        "email": "Địa chỉ email",
+        "position": "Chức vụ",
+        "phoneNumber": "Số điện thoại",
+        "website": "Website công ty",
+        "inquiry": "Loại yêu cầu",
+        "attachment": "Tập tin đính kèm",
+        "question": "Nội dung câu hỏi",
+        "acceptPolicy": "会社の プライバシーポリシーに同意します",
+        "noFileChosen": "Không có file nào được chọn",
+        "submit": "Gửi",
+        "systemtype": "Loại hệ thống",
+        "subjectofwork": "Chủ đề của công việc",
+        "developmenttype": "Loại phát triển",
+        "notices": "Thông báo",
+        "other": "Khác",
+        "holon-notices": "Yêu cầu trình diễn HOLON CONCEPT",
+        "holon-content": "Chúng tôi sẽ đánh giá cao nếu bạn có thể chứng minh HOLON CONCEPT."
+    },
+    "infoProduct": {
+        "back": "Quay lại",
+        "name": "Tên dự án",
+        "category": "Loại",
+        "device": "Thiết bị tương thích",
+        "projectOverview": "Tổng quan dự án",
+        "scale": "Quy mô phát triển",
+        "method": "Phương pháp phát triển",
+        "userNumber": "Số lượng người dùng",
+        "language": "Ngôn ngữ phát triển",
+        "database": "Cơ sở dữ liệu",
+        "infrastructure": "Cơ sở hạ tầng",
+        "other": "Khác",
+        "title": "Các sản phẩm khác",
+        "seemore": "Xem thêm"
+    },
+    "product": {
+        "title": "Sản phẩm",
+        "title_slider": ""
+    },
+    "recruitment": {
+        "title": "Thông tin tuyển dụng",
+        "job_name": "Tên công việc",
+        "work_type_name": "Loại công việc",
+        "deadline": "Deadline",
+        "quantity": "Số lượng",
+        "salary": "Lương",
+        "location_name": "Nơi làm việc",
+        "created_at": "Thời gian tạo"
+    },
+    "candidate": {
+        "name": "Tên",
+        "position_name": "Vị trí ứng tuyển",
+        "phone_number": "SĐT",
+        "email": "Email",
+        "cv_path": "CV",
+        "content": "Nội dung",
+        "created_at": "Thời gian tạo"
+    },
+    "contactadmin": {
+        "name": "Tên",
+        "company_name": "Tên công ty",
+        "position": "Vị trí",
+        "email": "Email",
+        "phone_number": "SĐT",
+        "website": "website",
+        "content": "Nội dung",
+        "inquiry_name": "Loại yêu cầu",
+        "attachment_path": "File",
+        "created_at": "Thời gian tạo"
+    },
+    "footer": {
+        "qna": "Chúng tôi cung cấp câu trả lời cho các câu hỏi thường gặp liên quan đến hợp đồng, hệ thống phát triển...",
+        "contact": "Vui lòng liên hệ với chúng tôi để được tư vấn dự án, hợp tác đối tác, yêu cầu phỏng vấn, v.v.",
+        "qna_description": "Các câu hỏi thường gặp",
+        "contact_description": "Liên hệ"
+    },
+    "accountForm": {
+        "required": "Không được để trống thông tin này",
+        "name": "Họ và Tên",
+        "role": "Vai trò",
+        "address": "Địa chỉ",
+        "email": "Email",
+        "phoneNumber": "Số điện thoại",
+        "rolePlaceholder": "Chọn vai trò",
+        "submit": "Gửi",
+        "currentPassword": "Mật khẩu hiện tại",
+        "newPassword": "Mật khẩu mới",
+        "confirmPassword": "Xác nhận mật khẩu",
+        "saveChanges": "Lưu thay đổi"
+    },
+    "accountList": {
+        "name": "Tên",
+        "role": "Vai trò",
+        "address": "Địa chỉ",
+        "email": "Email",
+        "phone_number": "SĐT"
+    },
+    "common": {
+        "seemore": "Xem thêm",
+        "success": "Thành công",
+        "back": "Quay lại"
+    },
+    "loginPage": {
+        "title": "Đăng nhập",
+        "email": "Email",
+        "pw": "Mật khẩu",
+        "forgot-pw": "Quên mật khẩu",
+        "login": "Đăng nhập",
+        "require": "Đây là trường bắt buộc",
+        "maxLength": "Vượt quá giới hạn kí tự",
+        "minLengthPw": "Vui lòng nhập ít nhất 8 kí tự",
+        "emailValidate": "Địa chỉ email không hợp lệ",
+        "passwordValidate": "Chưa đúng định dạng yêu cầu của mật khẩu",
+        "newPwValidate": "Chưa khớp với mật khẩu đã nhập"
+    },
+    "forgetPw": {
+        "step-email": "Nhập Email",
+        "step-otp": "Nhập mã OTP",
+        "step-setting": "Cài đặt mật khẩu",
+        "btn-next": "Tiếp tục",
+        "btn-save": "Lưu",
+        "email-title": "Nhập Email",
+        "email-desc": "Vui lòng nhập Email để nhận mã OTP",
+        "email-input": "Email",
+        "otp-title": "Nhập mã OTP",
+        "otp-desc": "Vui lòng nhập mã OTP đã được gửi qua Email.",
+        "otp-question": "Bạn chưa nhận được mail?",
+        "otp-send": " Gửi lại mail",
+        "setting-title": "Cài đặt mật khẩu",
+        "setting-pw": "Mật khẩu",
+        "setting-verifypw": "Xác nhận mật khẩu",
+        "setting-request": "Yêu cầu về mật khẩu:",
+        "setting-rqsmall": "Đảm bảo đáp ứng các yêu cầu sau:",
+        "setting-rq1": "・Dài tối thiểu 8 ký tự",
+        "setting-rq2": "・Ít nhất một chữ hoa và một chữ thường",
+        "setting-rq3": "・Ít nhất một số và ký tự đặc biệt",
+        "setting-plhd1": "Nhập mật khẩu mới",
+        "setting-plhd2": "Xác nhận mật khẩu mới",
+        "success-title": "Cài đặt mật khẩu thành công",
+        "success-desc": "Đăng nhập lại tài khoản với mật khẩu mới.",
+        "success-login": "Đăng nhập"
+    },
+    "image_table": {
+        "section_name": "Tên section",
+        "path": "Ảnh"
+    },
+    "validator": {
+        "require": "Không được bỏ trống",
+        "email": "Email không hợp lệ",
+        "phone": "Số điện thoại không hợp lệ",
+        "captcha": "Xác Minh Bạn Không Phải Là Robot!"
+    },
+    "formcandidate": {
+        "title": "Mẫu đăng ký",
+        "name": "Họ và Tên",
+        "email": "Email",
+        "phone": "Số điện thoại",
+        "content": "Nội dung ứng tuyển",
+        "file": "Tập tin đính kèm",
+        "message-file": "Không có file nào được chọn",
+        "submit": "Gửi"
+    },
+
+    "career": {
+        "posteron": "Thời gian đăng bài",
+        "quantity": "Số lượng",
+        "salary": "Lương",
+        "jobtype": "Loại công việc",
+        "location": "Địa chỉ",
+        "deadline": "Hạn cuối",
+        "Fulltime": "Fulltime",
+        "Parttime": "Parttime",
+        "Developer": "Developer",
+        "Comtor": "Comtor",
+        "HR": "Hr",
+        "UI/UX Designer": "UI/UX Designer",
+        "All": "Tất cả",
+        "Address": "Địa chỉ",
+        "Danang": "Đà Nẵng",
+        "Tokyo": "Tokyo"
+    },
+    "tablepagination": {
+        "showing": "Hiển thị",
+        "of": "trên"
+    },
+    "business-tabs": {
+        "main": "Enterprise",
+        "contract": "Contract",
+        "lab": "Laboratory",
+        "holon": "HOLON"
+    },
+    "holon": {
+        "diagram": {
+            "item_1": "Được xác định theo cùng định dạng cho tất cả mục tiêu HOLON",
+            "item_2": "Quản lý vòng đời và lịch sử cho tất cả mục tiêu HOLON",
+            "item_3": "Xác định mối quan hệ liên kết giữa HOLON và ACTION với các HOLON khác",
+            "block_1": "Tất cả vòng đời và lịch sử HOLON đều có sẵn và có thể được sử dụng để phân tích dữ liệu, AI, v.v.",
+            "block_2": "Phản hồi linh hoạt trước những thay đổi và bổ sung của HOLON",
+            "block_3": "Quản lý thống nhất về con người, đồ vật (Thực), đồ vật (Ảo), tiền bạc và thông tin"
+        },
+        "diagram2": {
+            "title": "HOLON - Khái Niệm Cơ Bản",
+            "item_1": "Là phiên bản kỹ thuật số của một người/đối tượng trong môi trường cụ thể; mỗi HOLON đều có thông tin cơ bản riêng, các hành động, thông tin liên quan và chu kỳ sống riêng.",
+            "item_2": "Ngay cả đối với cùng một người/đối tượng trong thực tế, thông tin cũng khác nhau, vì vậy cần định nghĩa một mẫu HOLON cụ thể cho mỗi môi trường.",
+            "block_1": "Thực tế/USE CASE",
+            "block_2": "Hệ thống",
+            "block_case_big_1": {
+                "list": {
+                    "title": "Thông tin cá nhân không thay đổi ở bất kỳ môi trường nào",
+                    "item_1": "Tên",
+                    "item_2": "Ngày sinh",
+                    "item_3": "Giới tính"
+                },
+                "block_case_1": "Người dùng hệ thống",
+                "block_case_2": "Quản lý hệ thống",
+                "block_case_3": "Nhân viên công ty",
+                "block_case_4": "Người nhận hàng"
+            },
+            "block_case_big_2": {
+                "list": {
+                    "title": "Các chức năng phổ biến",
+                    "item_1": "Quản lý mẫu",
+                    "item_2": "Quản lý cá thể",
+                    "item_3": "Quản lý quyền"
+                },
+                "block_case_1": "Mẫu người dùng",
+                "block_case_2": "Mẫu quản trị viên",
+                "block_case_3": "Mẫu nhân viên",
+                "block_case_4": "Mẫu người nhận"
+            },
+            "password": "Mật khẩu",
+            "manager": "Chức năng quản lý",
+            "employeeid": "ID nhân viên",
+            "email": "Địa chỉ email nhân viên",
+            "role": "Chức vụ",
+            "name": "Tên",
+            "address": "Địa chỉ",
+            "user": "Người dùng"
+        },
+        "link_popup": "Bấm vào đây để xem ví dụ"
+    },
+    "holon_popup": {
+        "title": "Ví dụ"
+    },
+    "introduceAi": {
+        "title": "AI trong xử lý ngôn ngữ tự nhiên gặp khó khăn với văn bản dài!",
+        "description_1": "Các văn bản và tài liệu dài",
+        "description_2.1": "Tóm tắt văn bản",
+        "description_2.2": "Sản phẩm AI",
+        "description_3": "Văn bản đã được tóm tắt",
+        "message": "Không như kỳ vọng"
+    },
+    "section_business": {
+        "title": "Để sử dụng trong môi trường kinh doanh"
+    },
+    "section_evaluate_ai": {
+        "content_1": "Các văn bản đến từ các nguồn khác nhau có cách trình bày và định dạng khác nhau, cần phải xử lý trước.",
+        "content_2": "Đối với các văn bản dài, việc nắm bắt thông tin và trích xuất ý chính là khó khăn, do đó cần chia nhỏ văn bản thành các khối.",
+        "content_3": "Các sản phẩm AI tóm tắt văn bản có các đặc điểm và lợi ích riêng, nên sử dụng công cụ phù hợp với nhu cầu và đối tượng tóm tắt.",
+        "content_4": "Sản phẩm AI tóm tắt không hoàn hảo 100%, cần phải đánh giá và điều chỉnh văn bản sau khi tóm tắt."
+    }
+}

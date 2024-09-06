@@ -1,0 +1,229 @@
+@import 'Common.scss';
+
+footer{
+    background: $footerBg;
+}
+
+.footer-content{
+    height: 100%;
+    padding: 48px 0px 24px 0px;
+    color: $footerTextColor;
+}
+
+hr{
+    background-color: #525151;
+    height: 1px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-toploop{
+    width: 240px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first-tokyo{
+    margin-right: 30px;
+}
+
+.location{
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: $fontBold;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+
+}
+
+.contact-item-email, .contact-item-tel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.icon{
+    margin-right: 16px;
+    width: 27px;
+    height: 21px;
+}
+.icon-big {
+    margin-right: 22px;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+}
+.contact-title{
+    min-width: 84px;
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: $fontMedium;
+    white-space:nowrap;
+
+}
+
+.contact-content{
+    font-size: 14px;
+    line-height: normal;
+    font-weight: $fontNormal;
+}
+
+.menu-connect{
+    margin-top: 70px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-page{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: $fontWeight;
+    line-height: normal;
+}
+
+.page-item-name{
+    margin-right: 30px;
+    color: white;
+}
+
+.page-item-name:hover{
+    color: $mainColor;
+    cursor: pointer;
+}
+
+.connect-icon{
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:18px ;
+}
+
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.logo-middle{
+    padding: 0px 18px;
+}
+
+.mobile{
+    display: none;
+}
+.img-styles {
+    max-width: 24px;
+    max-height: 24px;
+   
+}
+.img-styles img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+@media only screen and (max-width: 992px) {   
+    // main content
+    .footer-content{
+        padding: 32px 0px;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-toploop{
+        width: 125px;
+    }
+
+    .logo-toploop svg{
+        width: 125px;
+        height: 36.46px;
+    }
+
+    .introduce{
+        width: 100%;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .tokyo{
+        margin-right: 0px;
+        margin-top: 16px;
+    }
+
+    .location{
+        font-size: 14px;
+        line-height: 17.5px;
+    }
+
+    .contact-item svg, .contact-item-email svg, .contact-item-tel svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-title{
+        min-width: 72px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .contact-content{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .copy-right{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .mobile{
+        display:flex;
+        padding-top: 8px;
+        gap: 18px;
+    }
+
+    .connect-icon-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .menu-connect{
+        display: none;
+    }
+}
+
+
+
+

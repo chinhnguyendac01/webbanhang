@@ -1,0 +1,33 @@
+.ps-submenu-expand-icon {
+     display: none;
+     
+}
+.ps-collapsed {
+     width: 65px !important;
+     min-width: 65px !important;
+}
+.ps-menu-label  {
+     color: var(--414042, #0E0F3B);
+     font-size: 12px;
+     font-weight: 400;
+}
+.ps-menu-button {
+//     border-radius:8px ;
+     height: 40px !important;
+     padding-right: 5px !important;
+     // padding-left: 10px !important;
+}
+.ps-menu-icon {
+     width: 20px !important;
+     min-width: 20px !important; 
+     // margin-right: 0px !important;
+}
+.ps-sidebar-root {
+     border-right-width:0px !important;
+}
+.ps-sidebar-container {
+     background-color: initial !important;
+}
+.ps-active {
+     color: #FF8B13;
+}

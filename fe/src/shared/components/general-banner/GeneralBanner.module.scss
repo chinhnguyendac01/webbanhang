@@ -1,0 +1,159 @@
+@import "Common.scss";
+
+.GeneralBanner {
+    height: 600px;
+    position: relative;
+
+    //
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: lightgray;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: $fontBold;
+    font-size: 40px;
+    line-height: 50px;
+    color: $titleColor;
+    padding-top: 65px;
+    display: flex;
+}
+
+.text {
+    max-width: 486px;
+    padding-top: 32px;
+    font-size: 18px;
+    font-weight: $fontWeight;
+    line-height: normal;
+    color: $textColor;
+}
+
+.text-banner-mobile {
+    display: none;
+}
+.icon-info {
+    display: flex;
+    align-items: stretch;
+    cursor: pointer;
+    // margin-bottom: 20px;
+    // transform: translate(0px,20px);
+    max-height: 25px;
+}
+@media (min-width: 1280px) {
+    .GeneralBanner {
+        background-position-x: 50%;
+        background-position-y: 90% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .Styles_banner::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 30px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .Styles_banner::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 30px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(360deg, #FFF 6.88%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .GeneralBanner {
+        height: 260px;
+    }
+
+    .text-GeneralBanner {
+        display: none;
+    }
+
+    .title {
+        padding-top: 40px;
+        font-size: 18px;
+        font-weight: $fontWeight;
+        line-height: normal;
+    }
+
+    .text-banner-mobile {
+        display: block;
+    }
+
+    .text-banner-title {
+        padding-top: 40px;
+        font-size: 18px;
+        font-weight: $fontWeight;
+        line-height: normal;
+        color: $titleColor;
+    }
+
+    .text-banner-text {
+        padding-top: 16px;
+        padding-bottom: 24px;
+        font-size: 16px;
+        font-weight: $fontWeight;
+        line-height: normal;
+        color: $textColor;
+    }
+
+    .text-banner-image img {
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(to right, #4880EC, #019CAD);
+    }
+
+    .text-banner-image {
+        position: relative;
+
+    }
+
+    .text-banner-image::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 30px;
+        top: 0 !important;
+        background-color: red;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, #FFF 6.88%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .text-banner-infoPage{
+        padding-top: 16px;
+        padding-bottom: 24px;
+        font-size: 16px;
+        font-weight: $fontWeight;
+        line-height: normal;
+        color: $textColor;
+    }
+    .icon-info svg {
+        height: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .text-banner-infoPage{
+        font-size: 14px;
+    }
+}

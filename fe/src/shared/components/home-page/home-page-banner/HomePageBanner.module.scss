@@ -1,0 +1,223 @@
+@import '@fontsource/lexend/700.css';
+@import 'Common.scss';
+
+.home-page-banner {
+    // margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.banner {
+    // height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+    background: url('../../../../assets/images/homepage-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    // width: 75%;
+    font-size: 28px;
+    line-height: normal;
+    font-weight: $fontBold;
+    color: $activeColor;
+    text-align: center;
+    padding-top: 48px;
+}
+
+.important-text {
+    padding: 32px 0px;
+    color: $textColor;
+    font-size: 40px;
+    line-height: normal;
+    font-family: 'Lexend';
+}
+
+.top-text,
+.loop-text {
+    text-transform: uppercase;
+}
+
+.top-text span,
+.loop-text span {
+    background: $gradient-color;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+.intro {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: $fontBold;
+    color: $textColor;
+    text-align: center;
+    // width: 82%;
+}
+
+.btn-learnmore {
+    padding: 32px 0px;
+}
+
+.btn-text {
+    font-size: 20px;
+    line-height: 25px;
+    color: $textColor;
+    font-weight: $fontBold;
+}
+
+.btn-play {
+    cursor: pointer;
+}
+
+// slider
+.banner-slider {
+    position: absolute;
+    width: 100%;
+    bottom: 23.6%;
+}
+
+// introduct
+.system-introduce {
+    color: $textColor;
+    font-size: 18px;
+    font-weight: $fontWeight;
+    line-height: normal;
+    text-align: center;
+}
+
+.system-introduce-text p {
+    margin: 0;
+}
+
+.format-text {
+    padding-top: 15%;
+    padding-bottom: 8%;
+    min-height: 315px;
+    max-height: 315px;
+}
+
+.back-shed {
+    height: 100.5%;
+    width: 100.5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 1.3s;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+@media only screen and (max-width: 991px) {
+    .banner-slider {
+        bottom: 21.5%;
+    }
+    .system-introduce {
+        font-size: 16px;
+    }
+    .format-text {
+        padding-top: 20%;
+        padding-bottom: 10%;
+        min-height: 284px;
+        max-height: 284px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        padding-top: 80px;
+        padding-bottom: 48px;
+        background: url('../../../../assets/images/homepage-mobile-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .question {
+        width: 100%;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: $fontWeight;
+        padding-top: 88px;
+    }
+
+    .important-text {
+        font-size: 30px;
+        line-height: normal;
+        font-weight: $fontBold;
+    }
+
+    .intro {
+        font-size: 16px;
+        line-height: normal;
+        font-weight: $fontWeight;
+        text-align: center;
+    }
+
+    .btn-learnmore {
+        padding: 40px 0px;
+    }
+
+    .btn-learnmore svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-text {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: $fontWeight;
+    }
+
+    // slider
+    .banner-slider {
+        position: absolute;
+        width: 100%;
+        top: 56%;
+    }
+
+    // introduct
+    .format-text {
+        padding-top: 57%;
+        padding-bottom: 5%;
+        min-height: 390px;
+        max-height: 390px;
+    }
+
+    .top-text,
+    .loop-text {
+        text-transform: lowercase;
+    }
+
+    .top-text span,
+    .loop-text span {
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .banner-slider {
+        top: 55%;
+    }
+    // introduct
+    .format-text {
+        padding-top: 64%;
+        padding-bottom: 5%;
+        min-height: 415px;
+        max-height: 415px;
+        width: 98%;
+    }
+}

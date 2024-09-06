@@ -1,0 +1,283 @@
+@import 'Common.scss';
+
+.business-wrapper{
+    color: #0E0F3B;
+}
+
+// contract-business
+.ContractBusiness{
+    position: relative;
+}
+
+.contract{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.contract-image{
+    width: 55%;
+    height: 600px;
+}
+
+.contract-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contract-content{
+    width: 51%;
+    position: absolute;
+    margin: 7% 0%;
+    right: 0;
+}
+
+.first-content{
+    width: 100%;
+    background: rgb(255, 139, 19, 0.6);
+    padding: 5% 6% 5% 20%;
+}
+
+.topic{
+    font-size: 24px;
+    font-weight: $fontBold;
+    line-height: normal;
+    padding-bottom: 24px;
+}
+
+.text{
+    width: 96%;
+    font-size: 16px;
+    font-weight: $fontNormal;
+    line-height: normal;
+}
+
+.detail-btn{
+    margin-left: 20%;
+    margin-top: 32px;
+}
+
+.detail-btn button, .detail-btn-second button{
+    width: 190px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid var(--FF8B13, #FF8B13);
+    background-color: white;
+    font-size: 16px;
+    font-weight: $fontWeight;
+    line-height: normal;
+    color: var(--FF8B13, #FF8B13);
+}
+
+.detail-btn button:hover, .detail-btn-second button:hover{
+    color: white;
+    background: $activeColor;
+}
+
+.contract-svg img{
+    position: absolute;
+    top: 65%;
+}
+
+.small-contract{
+    display: none;
+}
+
+// system business
+.SystemBusiness{
+    position: relative;
+}
+
+.system{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 72px;
+}
+
+.system-content{
+    width: 50%;
+}
+
+.main-content{
+    width: 110%;
+}
+
+.second-content{
+    width: 54%;
+    max-height: 75%;
+    background: rgb(255, 139, 19, 0.6);
+    padding: 3% 10% 3% 5%;
+    position: absolute;
+    top: 11%;
+}
+
+.detail-btn-second{
+    position: absolute;
+    bottom: 8%;
+    margin-left: 5%;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: $fontWeight;
+    line-height: normal;
+}
+
+.system-image{
+    width: 55%;
+    height: 600px;
+}
+
+.system-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.system-svg{
+    position: absolute;
+    right: 0;
+    bottom: -50%;
+}
+
+.mobile-system{
+    display: none;
+}
+
+@media only screen and (max-width: 1199px){
+    .contract-content{
+        top: 6%;
+        bottom: 8%;
+    }
+
+    .first-content{
+        padding: 32px 16px 32px 80px;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    .contract-svg img{
+        top: 50%;
+    }
+
+    .second-content{
+        width: 54%;
+        height: 85%;
+        padding: 32px 24px 32px 54px;
+        top: 8%;
+        bottom: 10%;
+    }
+
+    .contract-image{
+        height: 100%;
+    }
+
+    .system-image{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+
+    .main-content{
+        width: 100%;
+    }
+    //contract
+    .contract {
+        display: none;
+    }
+
+    .small-contract{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
+    .small-contract-content{
+        margin: 32px 0px;
+        padding: 25px 20px;
+        background: rgb(255, 139, 19, 0.6);
+    }
+
+    .topic{
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 32px;
+    }
+
+    .text{
+        width: 100%;
+        line-height: 20px;
+    }
+
+    .detail-btn{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contract-svg img{
+        width: 165px;
+        height: 260px;
+        top: 30%;
+    }
+
+    // system
+    .system{
+        display: none;
+    }
+
+    .mobile-system{
+        display: block;
+    }
+
+    .mobile-system-image{
+        margin: 32px 0px;
+    }
+
+    .mobile-system-image img{
+        width: 100%;
+    }
+
+    .mobile-system-content{
+        width: 100%;
+        background: rgb(255, 139, 19, 0.6);
+        padding: 27px 20px;
+        margin-bottom: 32px;
+    }
+
+    .system-svg{
+        bottom: 0;
+        top: 30%;
+    }
+
+    .system-svg img{
+        width: 165px;
+        height: 260px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .contract-svg img{
+        top: 23%;
+    }
+
+    .system-svg{
+        top: 23%;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    .mobile-contract{
+        width: 102.5%;
+    }
+}

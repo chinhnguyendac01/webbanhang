@@ -1,0 +1,51 @@
+@import "Common.scss";
+
+.scroll-menu {
+    position: fixed;
+    top: 90px;
+    right: 0;
+    z-index: 3;
+}
+
+.item {
+    max-width: 50px;
+    width: 50px;
+    background-color: $mainColor;
+    margin-bottom: 8px;
+    border-radius: 8px 0px 0px 8px;
+    padding: 10px;
+    color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: auto;
+    cursor: pointer;
+    text-wrap: wrap;
+    height: fit-content;
+}
+
+.item:hover {
+    background: #FBF5ED;
+    color: $mainColor;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.vertical-text {
+    // display: flex;
+    // flex-direction: column;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+// .vertical-text span {
+//     display: block;
+// }
+
+@media only screen and (max-width: 600px) {
+    .scroll-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,103 @@
+.AdminLayout {
+    display: flex;
+}
+.Body-left {
+    // width: 250px;
+    height: 100vh;
+    border-right: 0.5px solid #d9d9d9;
+    position: fixed;
+    top: 0px;
+    z-index: 11;
+}
+.Body-right {
+    flex: 1;
+}
+.Frame-header {
+    width: 100%;
+    height: 72px;
+    border-bottom: 0.5px solid #d9d9d9;
+    background: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    // padding-right: 250px;
+}
+.Frame-logo {
+    height: 72px;
+    width: 100%;
+    box-sizing: border-box;
+    // padding-left: 25px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #d9d9d9;
+    background: #fafafa;
+    position: relative;
+}
+.Icon-toogle_sidebar {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    padding: 6px;
+    background: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+    z-index: 2;
+}
+//logo
+.Header_navbarBrand {
+    position: relative;
+    width: 103px;
+    height: 32px;
+    cursor: pointer;
+}
+.Frame_navbarBrand {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.Header_imgLogo {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+//Title-page
+.Frame-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.Title-page {
+    padding: 16px 0;
+    height: 62px;
+    width: calc(100% - 50px);
+    border-bottom: 1px solid #d9d9d9;
+}
+.Main-content {
+    // margin-top: 72px;
+   
+}
+
+.Frame-Sidebar {
+    height: 90vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar:horizontal {
+        height: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparentize(#ccc, 0.7);
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: transparentize(#ccc, 0.5);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+}

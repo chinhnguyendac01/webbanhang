@@ -1,0 +1,32 @@
+@import 'Common.scss';
+
+.MainLayout {
+    font-family: $font-family;
+    // max-width: $maxWidthLayout;
+    // margin: 0 auto;
+}
+
+.HomePageLayout{
+    font-family: $font-family;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+// AuthLayout
+.AuthLayout{
+    font-family: $font-family;
+    height: 100vh;
+}
+
+.auth-content{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .content {
+        margin-top: 50px;
+    }
+}

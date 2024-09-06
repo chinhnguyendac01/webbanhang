@@ -1,0 +1,193 @@
+.Form_job {
+    width: 100%;
+    border-radius: 8px;
+    background: var(--FFFBF1, #fffbf1);
+    box-sizing: border-box;
+    padding: 48px 30px 50px 30px;
+}
+.Form_job-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.Title_form-job {
+    color: var(--0E0F3B, #0e0f3b);
+    margin-bottom: 0px !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+.Input_frame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.Label_frame {
+    margin-bottom: 0px;
+}
+.Name_input {
+    color: #848484;
+    font-size: 14px;
+    font-weight: 400;
+}
+.Require {
+    color: var(--F80000, #f80000);
+    font-size: 14px;
+    font-weight: 400;
+}
+.Input_styles {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid var(--09224B, rgba(9, 34, 75, 0.22));
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 45px;
+    font-size: 14px;
+}
+.Input_styles-div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid var(--09224B, rgba(9, 34, 75, 0.22));
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 45px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.Style_text-file {
+    margin: 0px;
+    color: var(--848484, #848484);
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+}
+.Label_cv-frame {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.Cv_upload-name {
+    font-size: 14px;
+    color: var(--0E0F3B, #0e0f3b);
+    font-weight: 600;
+}
+.Cv_upload-files {
+    font-size: 14px;
+    color: var(--0E0F3B, #0e0f3b);
+    font-weight: 400;
+}
+
+//icon
+.Icon_check,
+.Icon_uncheck {
+    width: 15px;
+    line-height: 15px;
+}
+.Rules input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+}
+.Rules .Icon_uncheck {
+    display: inline-block;
+}
+.Rules .Icon_check {
+    display: none;
+}
+.Rules input[type='checkbox']:checked + label .Icon_uncheck {
+    display: none;
+}
+.Rules input[type='checkbox']:checked + label .Icon_check {
+    display: inline-block;
+}
+.Label_rules {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    cursor: pointer;
+}
+.Rules {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+///
+.Text_rules {
+    color: #848484;
+    font-size: 11px;
+    font-weight: 400;
+    margin-left: 6px;
+}
+.Text_open-rules {
+    color: var(--FF8B13, #ff8b13);
+    font-weight: 600;
+    cursor: pointer;
+}
+.Btn_job {
+    border-radius: 25px;
+    width: 119px;
+    height: 40px;
+    box-sizing: border-box;
+    background: var(--FF8B13, #ff8b13);
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+}
+//
+.Frame_btn-job {
+    display: flex;
+    justify-content: center;
+}
+.ReCaptcha {
+    margin-bottom: 20px;
+}
+.Btn_job {
+    margin-top: 40px;
+}
+.List_rules {
+    padding-left: 15px;
+    list-style: decimal;
+    margin-bottom: 0px;
+}
+.List_rules li {
+    color: var(--848484, #848484);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.Form_job {
+    width: 100%;
+    border-radius: 8px;
+    background: var(--FFFBF1, #fffbf1);
+    box-sizing: border-box;
+    padding: 48px 30px 50px 30px;
+}
+.captcha {
+    margin-bottom: 24.5px;
+}
+@media (max-width: 576px) {
+    .Form_job {
+        width: 100%;
+        border-radius: 8px;
+        background: var(--FFFBF1, #fffbf1);
+        box-sizing: border-box;
+        padding: 48px 25px 50px 25px;
+    }
+}

@@ -1,0 +1,90 @@
+@import "Common.scss";
+
+.title {
+    color: $titleColor;
+    font-size: $fontSizeLarge;
+    font-weight: $fontBold;
+    text-align: center;
+    margin: 24px auto;
+}
+
+.popup-content {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.images-wrapper {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+
+    .wrapper {
+        margin-bottom: 24px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        // object-fit: cover;
+    }
+}
+
+.image-wrapper {
+    height: fit-content;
+    margin: 0 auto;
+    // width: fit-content;
+    width: fit-content;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.grid-container--3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.grid-container--2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    align-items: start;
+
+    img {
+        object-fit: contain;
+    }
+}
+
+.image-container {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+
+    // img {
+    //     object-fit: contain;
+    //     object-position: center center;
+    // }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: $fontSizeSmall;
+        font-weight: $fontSemiBold;
+        text-align: center;
+        margin: 8px auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title {
+        text-align: left;
+    }
+}

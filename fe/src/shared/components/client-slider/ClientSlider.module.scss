@@ -1,0 +1,79 @@
+@import "Common.scss";
+
+.title {
+    margin-bottom: 32px;
+    color: $titleColor;
+    font-size: $fontSizeLarge;
+    font-style: normal;
+    font-weight: $fontBold;
+    line-height: normal;
+}
+
+.slider {
+    .slider-item {
+        width: 100%;
+        height: 100%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%;
+        outline: none !important;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        img {
+            outline: none !important;
+        }
+    }
+}
+
+.btn-arrow {
+    // width: 30px !important;
+    // height: 30px !important;
+    padding: 0px !important;
+
+    svg {
+        fill: $mainColor !important;
+    }
+
+    path {
+        fill: $mainColor !important;
+    }
+
+    border: 1px solid $mainColor !important;
+}
+
+.btn-arrow:hover {
+    background-color: $mainColor !important;
+
+    svg {
+        fill: $white !important;
+
+        path {
+            fill: $white !important;
+        }
+    }
+}
+
+.btn-arrow::before {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .title {
+        font-size: $fontSizeMedium !important;
+        font-weight: $fontSemiBold;
+        margin-bottom: 16px !important;
+    }
+
+    .slider {
+        .slider-item {
+            max-height: 88px !important;
+        }
+    }
+
+}

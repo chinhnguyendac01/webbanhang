@@ -1,0 +1,118 @@
+@import "Common.scss";
+
+.diagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .item {
+            font-weight: $fontBold;
+            color: $titleColor;
+        }
+    }
+
+    .w100 {
+        width: 100% !important;
+    }
+
+    .blockwrap_fullwidth {
+        >div {
+            >div {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .icon {
+        margin: 24px 0;
+    }
+
+    .bottom {
+
+        .row-2 {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            gap: 31px;
+            max-width: 800px;
+        }
+
+        .blockwrap_halfwidth {
+            >div {
+                >div {
+                    width: 100% !important;
+                }
+            }
+
+            word-wrap: break-word;
+            // max-width: 50% !important;
+            // word-break: keep-all;
+        }
+
+        .blockwrap_halfwidth {
+            >div {
+                >div {
+                    width: 100% !important;
+                }
+            }
+
+            word-wrap: break-word;
+            // max-width: 50% !important;
+            // word-break: keep-all;
+        }
+    }
+
+    // .blockwrap_halfwidth{
+    //     max-width: 450px;
+    // }
+}
+
+@media (max-width: 400px) {
+    .top {
+        .item {
+            font-size: $fontSizeSmall !important;
+            font-weight: $fontSemiBold;
+        }
+    }
+
+    .icon {
+        margin: 16px 0;
+    }
+
+    .blockwrap_fullwidth {
+        >div {
+            >div {
+                padding: 10px !important;
+                min-height: 50px !important;
+            }
+        }
+    }
+
+    .blockwrap_halfwidth {
+        >div {
+            >div {
+                padding: 10px !important;
+                min-height: 50px !important;
+            }
+        }
+    }
+
+    .icon {
+        svg {
+            width: 30 !important;
+            height: 30 !important;
+
+            path {
+                width: 30 !important;
+                height: 30 !important;
+            }
+        }
+    }
+}

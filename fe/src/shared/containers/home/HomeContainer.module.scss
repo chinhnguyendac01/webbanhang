@@ -1,0 +1,33 @@
+@import 'Common.scss';
+
+.HomeContainer{
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.technology-stack,
+.client-slider,
+.product-list {
+    margin: 72px 0px;
+}
+.list-job {
+    padding-bottom:50px;
+}
+@media only screen and (max-width: 767px) {
+
+    .HomeContainer{
+        margin-top: 0px;
+    }
+
+    .client-slider {
+        margin: 48px 0px;
+    }
+
+    .technology-stack {
+        margin: 0;
+    }
+
+    .product-list{
+        margin-top: 0;
+    }
+}

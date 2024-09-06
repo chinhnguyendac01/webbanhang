@@ -1,0 +1,63 @@
+@import 'Common.scss';
+
+.section-action{
+    margin-right: 80px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-name{
+    color: $textColor;
+    font-size: 20px;
+    font-weight: $fontBold;
+}
+
+.section-item{
+    margin: 80px;
+    margin-top: 0;
+}
+
+.item-title{
+    color: $textColor;
+    font-size: 16px;
+    font-weight: $fontNormal;
+    margin-bottom: 5px;
+}
+
+.video-url{
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.video-url .item-title{
+    font-weight: 600;
+}
+
+.styles-video-url{
+    width: 100%;
+}
+
+.btn-edit {
+    border: 1px solid #0E0F3B !important;
+
+    svg {
+        path {
+            fill: #0E0F3B;
+        }
+    }
+}
+
+.btn-edit:hover {
+    background-color: #0E0F3B;
+
+    svg {
+        path {
+            fill: $white;
+        }
+    }
+}

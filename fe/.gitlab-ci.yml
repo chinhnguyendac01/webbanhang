@@ -1,0 +1,55 @@
+stages:
+    - build
+    - deploy
+
+build:
+    stage: build
+    only:
+        - web
+        - main
+        - test
+    before_script:
+        - ls -a
+        - pwd
+        - whoami
+        - mkdir -p source
+    script:
+        - yarn install
+        - yarn build
+        - rm -rf .node_modules
+        - cd build
+        - zip -r ../source/build.zip *
+    variables:
+        REACT_APP_API_URL: $REACT_APP_API_URL
+        REACT_APP_API_KEY: $REACT_APP_API_KEY
+        REACT_APP_KEY_RECAPTCHA: $REACT_APP_KEY_RECAPTCHA
+        REACT_APP_STORAGE_URL: $REACT_APP_STORAGE_URL
+    artifacts:
+        expire_in: 1 day
+        paths:
+            - source
+    environment: $CI_COMMIT_REF_NAME
+
+deploy:
+    stage: deploy
+    only:
+        - web
+        - main
+        - test
+    before_script:
+        - eval $(ssh-agent -s)
+        - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY")'
+        - mkdir -p ~/.ssh
+        - ssh-keyscan -H -p $SSH_PORT $SSH_SERVER_DOMAIN >> ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+    script:
+        - echo 'put -r source/build.zip' | sftp -oPort=$SSH_PORT $SSH_USER@$SSH_SERVER_DOMAIN:$SERVER_DIR &&
+        - >
+            ssh $SSH_USER@$SSH_SERVER_DOMAIN -p $SSH_PORT
+            "cd $SERVER_DIR;
+            find . -type f ! -name 'build.zip' ! -name '.htaccess' -exec rm -f {} +;
+            find . -type d -empty -delete;
+            unzip -o build.zip;
+            rm build.zip;
+            chown $DEPLOY_USER:$DEPLOY_USER -R $SERVER_DIR"
+    environment: $CI_COMMIT_REF_NAME

@@ -1,0 +1,56 @@
+@import "Common.scss";
+
+.holon-concept {
+    padding: 72px 0px;
+    width: 100%;
+
+    .title {
+        color: $titleColor;
+        font-size: 28px;
+        font-weight: $fontBold;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .desc {
+        margin: 24px 0px 46px 0px;
+        width: 100%;
+        color: $textColor;
+        font-size: 16px;
+        font-weight: $fontNormal;
+        line-height: normal;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .holon-concept {
+        padding: 32px 0px;
+
+        .title {
+            font-size: 18px;
+        }
+
+        .desc {
+            margin: 16px 0px 32px 0px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .desc {
+        font-size: $fontSizeSmall !important;
+    }
+}

@@ -1,0 +1,155 @@
+// @import url('https://fonts.googleapis.com/css?family=Lexend');
+@import "@fontsource/noto-sans-jp";
+
+$red: red;
+$blue: blue;
+$gray: #707070;
+$white: #ffffff;
+$gray-light: #f2f2f2;
+$gray-light-400: #d8d7d7;
+$success-color: #138300;
+$danger-color: #ff2c00;
+
+$fontBold: 700;
+$fontMedium: 500;
+$fontNormal: 400;
+$fontLight: 300;
+$fontWeight: 600;
+$fontSemiBold: 600;
+
+$fontSizeSmall: 14px;
+$fontSizeNormal: 16px;
+$fontSizeMedium: 18px;
+$fontSizeLarge: 28px;
+
+$mainColor: #FF8B13;
+$successColor: #138300;
+$dangerColor: red;
+$textColor: #0E0F3B;
+$titleColor: #07407B;
+$activeColor: #FF8B13;
+$tableHeaderBacgroundColor: #f2f2f2;
+$footerTextColor: rgba(255, 255, 255, 1);
+$deliveryModelTextColor: rgba(65, 64, 66, 1);
+$mainFontColor: rgba(65, 64, 66, 1);
+
+$mainBg: #F8F9FB;
+
+$lineColor: #D8D7D7;
+$footerBg: rgba(37, 37, 37, 1);
+
+$headerZIndex: 1050;
+$modalZIndex: 1055;
+$backdropZIndex: 1053;
+$filterZIndex: -1;
+
+$largeFontSize: 18px;
+$normalFontSize: 16px;
+$smallFontSize: 14px;
+
+$border-radius-5: 5px;
+$border-input-width: 0.5px;
+
+$buttonHeight: 36.5px;
+$inputHeight: 32px;
+
+$font-weight-table: 500;
+
+$font-family: "Noto Sans JP";
+
+$gradient-color: linear-gradient(180deg, #F80000 0%, #F8DF00 100%);
+
+$bannerFilter: #07407B;
+$mainOrangeColor: #FF8B13;
+$transitionTime: 0.3s;
+
+$marginBottom: 72px;
+
+body {
+    margin: 0px;
+    overflow: inherit !important;
+    padding-right: 0px !important;
+}
+
+label,
+p {
+    margin-bottom: 0px !important;
+}
+
+//css validate form
+.require-messange-position {
+    position: relative;
+}
+
+.require-messange {
+    color: var(--ff-2237, #FF2237);
+    font-size: 14px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    left: 0px;
+}
+
+//
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    width: 100%;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// input:focus,
+// select:focus {
+//     outline: none;
+//     border: none;
+// }
+*:focus {
+    outline: 0;
+}
+
+.ql-editor {
+    padding: 0px !important;
+    // overflow: auto !important;
+}
+
+.ql-editor ul {
+    padding-left: 0px !important;
+}
+
+.custom_input {
+    width: 100% !important;
+    height: 45px !important;
+    border-radius: 5px !important;
+    border: 1px solid var(--09224B, rgba(9, 34, 75, 0.22)) !important;
+    background: #FFF !important;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25) !important;
+    padding: 10px 15px !important;
+}
+
+//
+// .MuiTooltip-tooltip {
+//     background-color: black !important;
+//     transform: translateY(70px) !important;
+
+//     padding: 5px 10px 5px 10px !important;
+// }
+// .MuiTooltip-arrow {
+//     color: black !important;
+// }
+
+.required_input {
+    position: relative;
+}
+
+.required_input::after {
+    position: absolute;
+    content: "*";
+    left: 100%;
+    color: var(--ff-2237, #FF2237);
+}

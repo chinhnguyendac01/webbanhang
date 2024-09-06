@@ -1,0 +1,115 @@
+@import "Common.scss";
+
+.add-content{
+    margin-bottom: 80px;
+    .tab-locale{
+        margin-top: 32px;
+    }
+
+    .form-wrapper{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .item-name{
+        margin-top: 32px;
+        margin-bottom: 5px;
+    }
+
+    .item-content-1{
+        margin-top: 24px;
+        margin-bottom: 5px;
+    }
+
+    .item-content-2{
+        margin-top: 16px;
+        margin-bottom: 5px;
+    }
+
+    .project-desc{
+        padding-bottom: 75px;
+    }
+
+    .action{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .action button{
+        width: 110px;
+        padding: 8px;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: $fontWeight;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .btn-cancel{
+        border: 1px solid var(--FF8B13, #FF8B13);
+        color: #FF8B13;
+        background-color: #FFF;
+    }
+
+    .btn-submit{
+        border: 1px solid var(--FF8B13, #FF8B13);
+        color: #FFF;
+        background-color: #FF8B13;
+    }
+
+    // table
+    table{
+        width: 100%;
+        input {
+            border: none;
+            background-color: transparent;
+            width: 100%;
+        }
+    }
+
+    .odd-row{
+        background: var(--neutral-100, #F8F9FC);
+    }
+
+    .title-column, .content-column{
+        padding: 8px 15px;
+    }
+
+    .title-column{
+        width: 50%;
+        font-size: 16px;
+        color: $textColor;
+        font-weight: $fontWeight;
+        line-height: normal;
+        border-right: 2px solid var(--FFFFFF, #FFF);
+    }
+
+    .title-column input{
+        font-size: 16px;
+        color: $textColor;
+        font-weight: $fontWeight;
+        line-height: normal;
+    }
+
+    .content-column input{
+        color: $textColor;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: $fontNormal;
+    }
+
+    .overview{
+        padding: 8px 15px;
+        color: $activeColor;
+        font-size: 16px;
+        font-weight: $fontWeight;
+        line-height: normal;
+    }
+
+    .btn-add-more {
+        background-color: $titleColor;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,32 @@
+.Breadcrumb_ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    font-size: 18px;
+}
+.Breadcrumb_ul li:first-child span {
+    display: none;
+
+}
+.Breadcrumb_ul li span {
+    margin-right: 3px;
+    color: #07407B;
+}
+.Breadcrumb_ul li {
+     display: flex;
+     align-items: center;
+  
+}
+.Breadcrumb_ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--07407B, #07407B);
+}
+.Space_page {
+     font-size: 14px;
+     line-height: 18px;
+}

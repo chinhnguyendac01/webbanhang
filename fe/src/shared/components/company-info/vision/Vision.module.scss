@@ -1,0 +1,129 @@
+@import "Common.scss";
+
+.vision {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+// image
+.image {
+    width: 49%;
+    display: flex;
+}
+
+// .image-section{
+//   flex-basis: calc(100% / 3);
+//   flex-grow: 1;
+//   height: 100vh;
+//   overflow: hidden;
+//   position: relative;
+// }
+// .image-section .image {
+//   transition: transform 1s;
+//   overflow: hidden;
+//   width: 100%;
+//   height: 100%;
+// }
+// .image-section .image img {
+//   width: 100vw;
+//   height: 100%;
+//   position: absolute;
+// }
+// .image-section.one img {
+//   left: calc(-1 * ((100vw / 3)) * 0);
+// }
+
+// .image-section.two img {
+//   left: calc(-1 * ((100vw / 3)) * 1);
+// }
+
+// .image-section.three img {
+//   left: calc(-1 * ((100vw / 3)) * 2);
+// }
+
+.blank {
+    width: 4%;
+}
+
+.content {
+    width: 49%;
+}
+
+.image img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.content {
+    margin-left: 30px;
+}
+
+.title {
+    color: $titleColor;
+    text-align: end;
+    font-size: 28px;
+    font-weight: $fontBold;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+
+.text {
+    color: $textColor;
+    font-size: 16px;
+    font-weight: $fontNormal;
+    line-height: normal;
+    padding-bottom: 54px;
+}
+
+@media only screen and (max-width: 991px) {
+    .vision {
+        margin-top: 54px;
+        flex-direction: column;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            strong {
+                text-align: center !important;
+                font-size: 18px !important;
+                font-weight: $fontWeight !important;
+                padding-bottom: 16px !important;
+            }
+        }
+    }
+
+    .image {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    .blank {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: $fontWeight;
+        padding-bottom: 16px;
+
+
+    }
+
+    .text {
+        padding-bottom: 24px;
+    }
+}

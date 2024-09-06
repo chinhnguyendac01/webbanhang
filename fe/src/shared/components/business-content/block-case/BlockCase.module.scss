@@ -1,0 +1,30 @@
+.blockcase {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-width: 213px;
+    background-color: #fff;
+}
+.title {
+    color: #0e0f3b;
+    font-size: 16px;
+    font-weight: 600;
+}
+.ul-styles {
+    padding-left: 23px;
+    color: var(--6B6B6B, #6b6b6b);
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 12px;
+    }
+    .blockcase {
+        min-width: auto;
+        width: 138px;
+    }
+    .ul-styles li {
+        font-size: 12px;
+    }
+}

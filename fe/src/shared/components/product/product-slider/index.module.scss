@@ -1,0 +1,51 @@
+@import "Common.scss";
+
+.title {
+    color: var(--07407B, #07407B);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 32px;
+}
+
+.item {
+    width: 320px;
+    height: 280px;
+    padding-right: 32px;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 32px;
+
+    .btn-arrow {
+        border: 1px solid $mainColor;
+        margin-right: 16px;
+        width: 40px;
+        height: 40px;
+        svg {
+            path {
+                fill: $mainColor;
+                ;
+            }
+        }
+    }
+
+    .btn-arrow:hover {
+        background-color: $mainColor;
+
+        svg {
+
+            path {
+                fill: $white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .product-slider {
+        display: none;
+    }
+}

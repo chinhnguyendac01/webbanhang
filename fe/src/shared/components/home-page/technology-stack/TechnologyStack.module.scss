@@ -1,0 +1,163 @@
+@import 'Common.scss';
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.topic{
+    font-size: $fontSizeLarge;
+    font-weight: $fontBold;
+    line-height: normal;
+    color: $titleColor;
+}
+
+.tabs{
+    font-weight: $fontWeight;
+    font-size: 16px;
+    line-height: normal;
+    color: $textColor;
+    padding-right: 10px;
+}
+
+.tab-item{
+    cursor: pointer;
+}
+
+.tab-item.active{
+    color: $activeColor;
+}
+
+.separator{
+    padding: 0px 15px;
+}
+
+.jobs-wrapper{
+    min-height: 270px;
+    max-height: 270px;
+    overflow: auto;
+}
+
+.jobs-wrapper::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.jobs{
+    padding: 0px 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jobs img:hover{
+    cursor: pointer;
+}
+
+.image-container{
+    border: 4px solid $activeColor;
+    border-radius: 50%;
+    margin: 16px 18px;
+}
+
+.job-img{
+    margin: 2px;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+@media only screen and (max-width: 1199px){
+    .technology-stack{
+        padding: 48px 0px;
+    }
+
+    .title{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs{
+        padding: 24px 0px 8px 0px;
+        font-size: 14px;
+        line-height: 17.5px;
+    }
+
+    .tabs label{
+        margin: 0;
+    }
+
+    .jobs-wrapper{
+        min-height: 230px;
+    }
+
+    .jobs{
+        padding: 0px;
+        // padding-left: 8px;
+        justify-content: center;
+    }
+
+    .image-container{
+        margin: 8px 16px;
+        height: 99px;
+    }
+
+    .job-img{
+        padding: 8px;
+        margin: 3px;
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .topic{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .separator{
+        padding: 0px 15px;
+    }
+
+    .jobs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .jobs-wrapper{
+        min-height: 321px;
+    }
+
+    .image-container{
+        margin: 8px;
+        height: 91px;
+    }
+
+    .job-img{
+        width: 78px;
+        height: 78px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .separator{
+        padding: 0px 11px;
+    }
+
+    .jobs-wrapper{
+        min-height: 335px;
+        max-height: 335px;
+    }
+
+    .image-container{
+        margin: 8px;
+        height: 88px;
+    }
+
+    .job-img{
+        width: 72px;
+        height: 72px;
+    }
+}

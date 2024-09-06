@@ -1,0 +1,79 @@
+@import 'Common.scss';
+
+.title {
+    width: 100%;
+    text-align: center;
+    color: $titleColor;
+    font-size: $fontSizeLarge;
+    font-style: normal;
+    font-weight: $fontBold;
+    line-height: normal;
+    margin-bottom: 32px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    transition: all 1s ease-in-out;
+
+    .item {
+        // height: 280px;
+        aspect-ratio: 1/1;
+        transition: all 1s ease-in-out;
+    }
+    .item-display {
+        aspect-ratio: 1/1;
+        transition: all 1s ease-in-out;
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 24px;
+
+    .btn {
+        color: $textColor;
+        cursor: pointer !important;
+        font-weight: $fontSemiBold;
+    }
+
+    .btn:hover {
+        color: $activeColor;
+    }
+}
+
+.showing {
+    margin-bottom: 30px;
+    color: $textColor;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+    .list {
+        grid-template-columns: auto !important;
+        gap: 16px !important;
+    }
+
+    .title {
+        font-size: $fontSizeMedium !important;
+        font-weight: $fontSemiBold;
+        margin-bottom: 24px !important;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px !important;
+
+        .btn {
+            font-size: $fontNormal;
+        }
+    }
+
+    .item-display {
+        display: none;
+    }
+}

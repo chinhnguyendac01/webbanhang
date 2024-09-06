@@ -1,0 +1,32 @@
+@import "Common.scss";
+
+.History{
+    margin: 72px 0px;
+}
+
+.topic{
+    color: $titleColor;
+    font-size: 28px;
+    font-weight: $fontBold;
+    line-height: normal;
+}
+
+.content-wrapper{
+    margin-top: 24px;
+}
+
+.content-wrapper img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px){
+    .History{
+        margin: 54px 0px;
+    }
+
+    .topic{
+        font-size: 18px;
+        font-weight: $fontWeight;
+        text-align: center;
+    }
+}

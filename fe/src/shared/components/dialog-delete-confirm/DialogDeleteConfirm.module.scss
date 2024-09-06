@@ -1,0 +1,56 @@
+.Dialog-content {
+    width: 320px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.Title {
+    color: var(--FF2237, #ff2237);
+    font-size: 16px;
+    font-weight: 600;
+}
+.Icon-delete {
+    width: 90px;
+    height: 90px;
+    background-color: #ff2237;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Frame-control {
+    display: flex;
+    gap: 16px;
+}
+.Style-btn-cancel {
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid var(--FC2424, #fc2424);
+    color: #ff2237;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-transform: none;
+    width: 100px;
+    height: 30px;
+}
+.Style-btn-accept {
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: #ff2237;
+    box-sizing: border-box;
+    text-transform: none;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+}

@@ -1,0 +1,19 @@
+@import "Common.scss";
+
+.pagination-wrapper {
+
+    .MuiPaginationItem-page {
+        color: #0E0F3B !important;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .Mui-selected {
+        color: #FFF !important;
+        background-color: $activeColor !important;
+    }
+
+    .MuiPaginationItem-icon {
+        color: #0E0F3B !important;
+    }
+}

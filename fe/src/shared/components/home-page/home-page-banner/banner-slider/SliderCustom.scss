@@ -1,0 +1,17 @@
+.slider-wrapper {
+    .slick-slider button {
+        display: none !important;
+    }
+
+    .slick-slider {
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .slider-wrapper {
+        .slick-slider {
+            height: 260px;
+        }
+    }
+}
