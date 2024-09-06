@@ -5,6 +5,7 @@ function HomePage(props) {
     return (
         <div className="HomePage">
             <HomeContainer />
+            hello
         </div>
     )
 }
