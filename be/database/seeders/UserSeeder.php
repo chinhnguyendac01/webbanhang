@@ -2,10 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Enums\RoleEnum;
-use App\Models\User;
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 class UserSeeder extends Seeder
@@ -15,18 +14,16 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::insert([
+        DB::table('users')->insert([
             [
-                'id' => Str::uuid(),
-                'name' => 'TOPLoop',
-                'email' => 'hello@toploop.vn',
-                'password' => bcrypt('Toploop@2024'),
-                'role' => RoleEnum::ADMINISTRATOR->value,
-                'address' => 'Japan',
-                'phone_number' => '0123456789',
-                'created_at' => Carbon::now(config('app.timezone')),
-                'created_by' => 'seeder',
+                'id' => (string) Str::uuid(),
+                'username' => 'admin',
+                'password' => Hash::make('password'), // Always hash passwords
+                'role' => 1,
+                'created_at' => now(),
+                'created_by' => 'system',
             ],
+
         ]);
     }
 }

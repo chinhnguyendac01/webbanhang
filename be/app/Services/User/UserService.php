@@ -19,7 +19,7 @@ class UserService implements UserServiceInterface
     use ResponseApi;
 
     public function __construct(
-        private readonly UserRepositoryInterface $userRepository
+        // private readonly UserRepositoryInterface $userRepository
     ) {
     }
 
