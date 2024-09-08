@@ -56,6 +56,7 @@ class AuthService implements AuthServiceInterface
         return $this->respond([
             'access_token' => $token,
             'expires_in' => JWTAuth::factory()->getTTL() * 60,
+            'username' => auth()->user()->username,
         ], 'Login Successful');
     }
 
