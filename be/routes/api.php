@@ -5,6 +5,7 @@ use App\Enums\RoleEnum;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Product\ProductController;
+use App\Http\Controllers\UserPayment\UserPaymentController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,20 +19,20 @@ use App\Http\Controllers\Product\ProductController;
 
 require __DIR__ . '/auth.php';
 
-// Route::group(['middleware' => 'jwt.auth'], function () {
-//     Route::get('/users', SearchUserController::class);
-// });
-
 Route::group([], function () {
     Route::get('/products', [ProductController::class, 'getProducts']);
     Route::get('/products/{id}', [ProductController::class, 'getProductById']);
-//    Route::get('/users', [UserController::class, 'index']);
+    Route::post('/user_payment/add',[UserPaymentController::class, 'addUserPayment'] );
 });
 Route::group(['middleware' => ['jwt.auth']], function () {
     Route::group(['prefix' => 'product'], function () {
         Route::post('/add', [ProductController::class, 'addProduct']);
         Route::post('/update/{id}', [ProductController::class, 'updateProduct']);
         Route::delete('/delete/{id}', [ProductController::class, 'deleteProduct']);
+    });
+    Route::group(['prefix' => 'user_payment'], function () {
+        Route::get('', [UserPaymentController::class, 'getUserPayment']);
+        Route::delete('/delete/{id}', [UserPaymentController::class, 'deleteUserPayment']);
     });
 });
 

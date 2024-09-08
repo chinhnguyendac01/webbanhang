@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('updated_by', 100)->nullable();
             $table->softDeletesTz();
             $table->string('deleted_by', 100)->nullable();
+            $table->rememberToken();
         });
     }
 
