@@ -10,7 +10,7 @@ use App\Http\Requests\User\UpdateUserByUserRequest;
 use App\Services\User\UserServiceInterface;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-
+use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     public function __construct(
@@ -23,7 +23,12 @@ class UserController extends Controller
      */
     public function index(Request $request): Response
     {
-        return $this->userService->get_users_list($request);
+         // Lấy danh sách tất cả các sản phẩm sử dụng Query Builder
+         $products = DB::table('users')->get();
+
+         // Chuyển đổi Collection thành Array
+         $productsArray = $products->toArray();
+         return response()->json($productsArray);
     }
 
     /**

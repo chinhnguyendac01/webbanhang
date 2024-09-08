@@ -20,14 +20,14 @@ class AuthService implements AuthServiceInterface
     use ResponseApi;
 
     public function __construct(
-        private readonly UserRepositoryInterface $userRepository,
-        private readonly PasswordResetRepositoryInterface $passwordResetRepository
+        // private readonly UserRepositoryInterface $userRepository,
+        // private readonly PasswordResetRepositoryInterface $passwordResetRepository
     ) {
     }
 
     public function login(LoginRequest $request)
     {
-        if (! $token = JWTAuth::attempt($request->only('email', 'password'), $request->boolean('remember'))) {
+        if (! $token = JWTAuth::attempt($request->only('username', 'password'), $request->boolean('remember'))) {
             return $this->respondUnAuthorizedRequest(ApiCode::INVALID_CREDENTIALS);
         }
 

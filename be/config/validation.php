@@ -38,4 +38,7 @@ return [
 
     // Qna
     'group_id' => ['present', 'string', 'max:100', 'nullable'],
+
+    //login
+    'username' => ['required', 'string', 'max:100'],
 ];

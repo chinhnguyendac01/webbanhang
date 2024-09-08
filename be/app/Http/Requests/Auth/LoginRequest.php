@@ -23,7 +23,7 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => config('validation.email'),
+            'username' => config('validation.username'),
             'password' => config('validation.password'),
         ];
     }

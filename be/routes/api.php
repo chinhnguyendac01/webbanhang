@@ -1,20 +1,11 @@
 <?php
 
 use App\Enums\RoleEnum;
-use App\Http\Controllers\Candidate\CandidateController;
-use App\Http\Controllers\Companies\CompaniesController;
-use App\Http\Controllers\Contact\ContactController;
-use App\Http\Controllers\Inquiry\InquiryController;
-use App\Http\Controllers\Libraries\LibrariesController;
-use App\Http\Controllers\Picture\PictureController;
-use App\Http\Controllers\Project\ProjectController;
-use App\Http\Controllers\Qna\QnaController;
-use App\Http\Controllers\RecruitmentPost\RecruitmentPostController;
-use App\Http\Controllers\Section\SectionController;
-use App\Http\Controllers\SectionLocale\SectionLocaleController;
+
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Product\ProductController;
+use App\Http\Controllers\UserPayment\UserPaymentController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -28,27 +19,21 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/auth.php';
 
-// Route::group(['middleware' => 'jwt.auth'], function () {
-//     Route::get('/users', SearchUserController::class);
-// });
-
 Route::group([], function () {
-   
+    Route::get('/products', [ProductController::class, 'getProducts']);
+    Route::get('/products/{id}', [ProductController::class, 'getProductById']);
+    Route::post('/user_payment/add',[UserPaymentController::class, 'addUserPayment'] );
 });
-
-Route::group(['middleware' => ['jwt.auth', 'jwt.auth:' . RoleEnum::ADMINISTRATOR->value]], function () {
-    Route::group(['prefix' => 'user'], function () {
-        Route::group(['prefix' => 'admin'], function () {
-            Route::get('', [UserController::class, 'index']);
-            Route::get('/{id}', [UserController::class, 'show_by_admin']);
-            Route::put('/{id}', [UserController::class, 'update_by_admin']);
-            Route::delete('/{id}', [UserController::class, 'destroy']);
-            Route::delete('', [UserController::class, 'deleteMany']);
-            Route::post('', [UserController::class, 'create_by_admin']);
-        });
+Route::group(['middleware' => ['jwt.auth']], function () {
+    Route::group(['prefix' => 'product'], function () {
+        Route::post('/add', [ProductController::class, 'addProduct']);
+        Route::post('/update/{id}', [ProductController::class, 'updateProduct']);
+        Route::delete('/delete/{id}', [ProductController::class, 'deleteProduct']);
     });
-
-    
+    Route::group(['prefix' => 'user_payment'], function () {
+        Route::get('', [UserPaymentController::class, 'getUserPayment']);
+        Route::delete('/delete/{id}', [UserPaymentController::class, 'deleteUserPayment']);
+    });
 });
 
 Route::group(['middleware' => ['jwt.auth']], function () {
