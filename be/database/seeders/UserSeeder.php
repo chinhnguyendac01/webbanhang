@@ -23,6 +23,14 @@ class UserSeeder extends Seeder
                 'created_at' => now(),
                 'created_by' => 'system',
             ],
+            [
+                'id' => (string) Str::uuid(),
+                'username' => 'admindev',
+                'password' => Hash::make('password'), // Always hash passwords
+                'role' => 1,
+                'created_at' => now(),
+                'created_by' => 'system',
+            ],
 
         ]);
     }
