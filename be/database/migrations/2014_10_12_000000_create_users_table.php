@@ -15,7 +15,7 @@ return new class extends Migration
             $table->uuid('id')->primary();     
             $table->string('username', 255)->unique();
             $table->string('password', 255);
-            $table->tinyInteger('role');
+            $table->tinyInteger('role')->nullable();
             $table->timestampTz('created_at')->nullable();
             $table->string('created_by', 100)->nullable();
             $table->timestampTz('updated_at')->nullable();
